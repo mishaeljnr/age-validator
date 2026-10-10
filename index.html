@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Validator - DTA</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>✓ Age Validator</h1>
+      <p>Check eligibility instantly</p>
+    </div>
+
+    <div class="form-box">
+      <label>Enter Your Full Name</label>
+      <input type="text" id="nameInput" placeholder="e.g. Mishael">
+
+      <label>Enter Your Date of Birth</label>
+      <input type="date" id="dobInput">
+
+      <button id="checkBtn">Validate Age</button>
+      <p id="error" class="error"></p>
+    </div>
+
+    <div id="resultCard" class="result hidden">
+      <div class="age-circle">
+        <span id="ageNumber">0</span>
+        <small>YEARS OLD</small>
+      </div>
+
+      <h2 id="greeting"></h2>
+      <p id="category" class="category"></p>
+
+      <div class="checks">
+        <div class="check" id="voteCheck"><span>🗳️ Voting (18+)</span><b></b></div>
+        <div class="check" id="driveCheck"><span>🚗 Driving (18+)</span><b></b></div>
+        <div class="check" id="ninCheck"><span>🪪 NIN Registration (16+)</span><b></b></div>
+        <div class="check" id="socialCheck"><span>📱 Social Media (13+)</span><b></b></div>
+      </div>
+
+      <div class="stats">
+        <div><small>Born On</small><b id="bornOn"></b></div>
+        <div><small>Total Days</small><b id="totalDays"></b></div>
+        <div><small>Next Birthday</small><b id="nextBirthday"></b></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
